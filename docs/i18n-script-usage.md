@@ -76,6 +76,18 @@ node tools/add-missing-i18n-variables.js
 
 This updates all `{lang}.json` files to include any new keys from `en.json`, placing them in the same order.
 
+### Find Untranslated Strings
+
+To see which strings still need translating — leaf values that are identical to the English source, plus keys missing entirely:
+
+```bash
+npm run int:untranslated          # summary table for every locale
+npm run int:untranslated -- de    # untranslated + missing keys for de.json
+node tools/find-untranslated.js de fr pt   # several locales at once (extension optional)
+```
+
+Compares every locale against `en.json`. Ignores values that are legitimately identical across languages (empty strings, interpolation-only tokens like `{{nr}}`, `GCF.LANG.*` language names, `THEMES.*`, and common proper nouns). Exits non-zero when untranslated strings are found. Tune the ignore list at the top of `tools/find-untranslated.js`.
+
 ## Workflow Example
 
 1. New features are added, updating `en.json` with new keys.

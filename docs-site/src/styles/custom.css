@@ -1,0 +1,11 @@
+/* Brand accent tuned to Super Productivity's primary color. */
+:root {
+  --sl-color-accent-low: #131e4a;
+  --sl-color-accent: #3f6fd8;
+  --sl-color-accent-high: #c3d3f7;
+}
+:root[data-theme='light'] {
+  --sl-color-accent-low: #d3ddf9;
+  --sl-color-accent: #2f5fd0;
+  --sl-color-accent-high: #16244f;
+}

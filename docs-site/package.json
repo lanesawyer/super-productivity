@@ -1,0 +1,20 @@
+{
+  "name": "super-productivity-docs",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Astro Starlight documentation site generated from the repo's docs/ folder",
+  "scripts": {
+    "sync-content": "node scripts/build-content.mjs",
+    "dev": "npm run sync-content && astro dev",
+    "start": "npm run dev",
+    "build": "npm run sync-content && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.41.3",
+    "astro": "^7.0.7",
+    "sharp": "^0.35.3"
+  }
+}

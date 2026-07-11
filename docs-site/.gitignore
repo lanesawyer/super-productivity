@@ -1,0 +1,13 @@
+# build output
+dist/
+# generated Astro types
+.astro/
+# dependencies
+node_modules/
+# generated docs content (built from ../docs by scripts/build-content.mjs)
+src/content/docs/
+# environment
+.env
+.env.production
+# logs
+npm-debug.log*

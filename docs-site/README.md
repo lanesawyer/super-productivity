@@ -3,6 +3,8 @@
 An [Astro Starlight](https://starlight.astro.build/) documentation site generated
 from the repo's [`../docs`](../docs) folder.
 
+Demo deploy: <https://lanesawyer.github.io/super-productivity/>
+
 `../docs` stays the single source of truth. Nothing in it is edited by this site —
 a build step mirrors its Markdown into `src/content/docs` and applies the transforms
 Starlight needs.
